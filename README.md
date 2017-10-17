@@ -31,4 +31,3 @@ Dentro de Android Studio:
     </center>
 </div>
 <br><br>
-<a href="http://www.miramicodigo.com" target="_blank">@Gusn8</a>
