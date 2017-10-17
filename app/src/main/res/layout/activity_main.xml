@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+
+    tools:context="com.abogato.tarea1.MainActivity"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/google1"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:text="Incia sesion para acceder a gmail"
+        android:textSize="12sp"
+        android:layout_marginBottom="21dp"
+        android:layout_above="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="270dp"
+        android:layout_height="30dp"
+        android:text="Una Cuenta. Todo Google"
+        android:textAlignment="center"
+        android:textSize="22sp"
+        android:layout_above="@+id/textView3"
+        android:layout_centerHorizontal="true" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="220dp"
+        android:layout_height="260dp"
+        android:layout_marginBottom="91dp"
+        android:background="#F7F7F7"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/checkBox"
+            android:layout_below="@+id/button7"
+            android:layout_toEndOf="@+id/checkBox"
+            android:gravity="center"
+            android:text="¿Necesitas Ayuda?"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="8sp" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignEnd="@+id/relativeLayout2"
+            android:layout_alignStart="@+id/relativeLayout2"
+            android:layout_below="@+id/relativeLayout2"
+            android:background="#498CF5"
+            android:text="Iniciar sesion"
+            android:textAlignment="center"
+
+
+            android:textColor="@android:color/background_light"
+            android:textSize="10sp"
+
+             />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/button7"
+            android:layout_below="@+id/button7"
+            android:button="@android:drawable/checkbox_off_background"
+            android:text="No cerrar sesion"
+            android:textSize="8sp" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="75dp"
+            android:layout_height="115dp"
+
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/usuario" />
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView3"
+            android:layout_centerHorizontal="true">
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="190dp"
+                android:ems="10"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:hint="Introduce tu correo electronico"
+
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="190dp"
+
+                android:layout_height="wrap_content"
+
+                android:layout_alignStart="@+id/editText2"
+                android:layout_below="@+id/editText2"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
